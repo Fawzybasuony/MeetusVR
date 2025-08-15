@@ -1,4 +1,4 @@
-import { getUserInfo } from "../../lib/api";
+import { getUserInfo } from "../../lib/GetUsers";
 
 export default async function User() {
   const user = await getUserInfo();
