@@ -31,7 +31,7 @@ export default function LogOut() {
       <button
         onClick={handleLogout}
         type="submit"
-        className="w-full py-3 rounded-lg bg-red-500 hover:bg-red-600 text-white font-semibold transition-all duration-300 shadow-md hover:shadow-lg"
+        className="w-full py-3 rounded-lg bg-red-500 hover:bg-red-600 text-white transition-all duration-300 shadow-md hover:shadow-lg"
       >
         {loading ? (
           <div
