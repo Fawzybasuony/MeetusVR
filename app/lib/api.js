@@ -5,10 +5,6 @@ export async function getUserInfo() {
   const cookieStore = await cookies();          
   const token = cookieStore.get("token")?.value;  
 
-  // if (!token) {
-  //   redirect("/");
-  // }
-
   const res = await fetch(
     "https://api-yeshtery.dev.meetusvr.com/v1/user/info",
     {

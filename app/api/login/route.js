@@ -13,8 +13,6 @@ export async function POST(request) {
   );
 
   const data = await res.json();
-  console.log(data);
-
   cookies().set("token", data.token, {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
