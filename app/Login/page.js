@@ -34,6 +34,9 @@ export default function Login() {
     }
   };
 
+
+
+  
   return (
     <div className="text-center flex justify-between items-center bg-[#E9ECF2]  h-screen relative overflow-hidden">
       {/* Left Section */}

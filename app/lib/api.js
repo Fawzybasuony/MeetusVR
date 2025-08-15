@@ -1,12 +1,10 @@
-// /lib/api.js
 import { cookies } from "next/headers";
 
 export async function getUserInfo() {
-  const token = cookies().get("token")?.value;
+  const cookieStore = await cookies();          
+  const token = cookieStore.get("token")?.value;  
 
-  if (!token) {
-    return null; // أو ترمي error
-  }
+  if (!token) return null;
 
   const res = await fetch(
     "https://api-yeshtery.dev.meetusvr.com/v1/user/info",
@@ -16,9 +14,7 @@ export async function getUserInfo() {
     }
   );
 
-  if (!res.ok) {
-    return null; // أو throw new Error("Unauthorized");
-  }
+  if (!res.ok) return null;
 
   const data = await res.json();
   return data;
