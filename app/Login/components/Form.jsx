@@ -49,10 +49,11 @@ export default function Form() {
       setLoading(false);
     }
   };
+
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       {/* Email Input */}
-      <div className="flex items-center border-2 border-white bg-[#FFFFFF66] rounded-lg mt-5 p-3 mb-2 w-full">
+      <div className="flex items-center border-2 border-white bg-[#FFFFFF66] rounded-lg p-3 mb-3 w-full">
         <svg
           width="20"
           height="20"
@@ -79,7 +80,7 @@ export default function Form() {
               message: "Invalid email format",
             },
           })}
-          className="ml-2 w-full h-full border-none outline-none focus:outline-none focus:ring-0"
+          className="ml-2 w-full h-full outline-none"
         />
       </div>
       {errors.email && (
@@ -89,7 +90,7 @@ export default function Form() {
       )}
 
       {/* Password Input */}
-      <div className="flex items-center border-2 border-white bg-[#FFFFFF66]  rounded-lg p-3 mb-2 w-full">
+      <div className="flex items-center border-2 border-white bg-[#FFFFFF66] rounded-lg p-3 w-full">
         <svg
           width="20"
           height="20"
@@ -116,7 +117,7 @@ export default function Form() {
           {...register("password", {
             required: "Password is required",
           })}
-          className="ml-2 w-full h-full border-none outline-none focus:outline-none focus:ring-0"
+          className="ml-2  w-full h-full border-none outline-none focus:outline-none focus:ring-0"
         />
       </div>
       {errors.password && (
@@ -129,7 +130,7 @@ export default function Form() {
       <button
         type="submit"
         disabled={!isValid}
-        className={`w-full py-3 px-5 rounded-lg text-white font-semibold transition ${
+        className={`w-full mt-9 py-3 px-5 rounded-lg text-white font-semibold transition ${
           isValid
             ? "cursor-pointer bg-[#9414FF] hover:bg-[#9b2ff4]"
             : "bg-gray-400 cursor-not-allowed"
