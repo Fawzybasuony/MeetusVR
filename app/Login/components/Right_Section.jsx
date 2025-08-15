@@ -1,6 +1,6 @@
 export default function Right_Section() {
   return (
-    <div className="col-span-5 h-screen flex items-center">
+    <div className="col-span-6 h-screen flex items-center">
       <img
         className="hidden sm:block p-20 z-50"
         src={"/Logo.png"}
