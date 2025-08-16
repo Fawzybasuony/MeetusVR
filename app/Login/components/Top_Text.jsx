@@ -6,10 +6,10 @@ export default function Top_Text() {
       <p className="text-4xl sm:text-5xl text-[#1A1A1E] h-[66px]">
         Welcome back
       </p>
-      <p className="text-[#62626B] h-14 mb-5">
+      <p className="text-[#62626B] h-14 mb-5 max-w-96">
         Step into our shopping metaverse for an unforgettable shopping
         experience
-      </p>
+      </p>  
     </div>
   );
 }

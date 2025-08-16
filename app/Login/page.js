@@ -8,7 +8,7 @@ export default function Login() {
       {/* Left Section */}
 
       <div className="col-span-12 lg:col-span-6 h-screen flex items-center ">
-        <div className="mx-auto px-20 xl:px-34">
+        <div className="mx-auto px-10 xl:px-34">
           {/* Text Header */}
           <Top_Text />
           {/* Form */}
